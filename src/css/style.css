@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: beige;
+}
+
+.div__textarea {
+    margin: auto;
+}
+
+.textarea__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea__title {
+    padding: 50px 0 40px 0;
+    font-size: 56px;
+}
+
+.textarea {
+    width: 800px;
+    height: 200px;
+    resize: none;
+}
+
+.textarea__text {
+    display: block;
+    padding: 30px;
+    font-size: 32px;
+}
+
+.keyboard {
+    width: 1100px;
+    margin: auto;
+}
+
+.keyboard__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+}
+
+.keyboard__button {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #FFF0F5;
+    font-size: 20px;
+    user-select: none;
+    transition: 0.5s;
+}
+
+
+.special {
+    background-color: #f8ebb1;
+}
+
+.backspace,
+.enter {
+    width: 187px;
+}
+
+.tab,
+.delete,
+.caps__lock,
+.shift__left,
+.shift__right {
+    width: 120px;
+}
+
+.ctrl__left,
+.ctrl__right,
+.win,
+.alt__left,
+.alt__right,
+.arrow__up,
+.arrow__left,
+.arrow__down,
+.arrow__right {
+
+}
+
+.space {
+    width: 510px;
+}
+
+
+.active {
+    transform: scale(0.7);
+}
