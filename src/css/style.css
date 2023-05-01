@@ -1,23 +1,35 @@
+* {
+    margin: 0;
+}
+
 body {
     background-color: aqua;
 }
 
 .div__textarea {
-
+    margin: auto;
 }
 
 .textarea__wrapper {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .textarea__title {
-
+    padding: 50px 0 40px 0;
+    font-size: 56px;
 }
 
 .textarea {
-
+    width: 800px;
+    height: 200px;
+    resize: none;
 }
 
 .textarea__text {
-    
+    display: block;
+    padding: 30px;
+    font-size: 32px;
 }
