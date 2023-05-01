@@ -9,6 +9,7 @@ export default class Keyboard {
     }
 
     init() {
-        this.htmlElems.keyboard();
+        console.log(this.body)
+        this.body.appendChild(this.htmlElems.textareaHTML());
     }
 }
