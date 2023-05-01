@@ -117,8 +117,8 @@ export default class HTMLElems {
         }
 
         if(buttonText == "◄") {
+            button.classList.add("special");
             button.classList.add("arrow__left");
-            button.classList.add("space");
         }
 
         if(buttonText == "▼") {

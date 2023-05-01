@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: aqua;
+    background-color: beige;
 }
 
 .div__textarea {
@@ -37,7 +37,7 @@ body {
 
 
 .keyboard {
-    width: 900px;
+    width: 1100px;
     margin: auto;
 }
 
@@ -46,17 +46,48 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    gap: 6px;
 }
 
 .keyboard__button {
-    width: 65px;
-    height: 65px;
-    margin: 2px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
     border: none;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 0.5rem;
+    border-radius: 5px;
     background-color: #FFF0F5;
     font-size: 20px;
     user-select: none;
+}
+
+
+.special {
+    background-color: #f8ebb1;
+}
+
+.backspace,
+.enter {
+    width: 187px;
+}
+
+.tab,
+.delete,
+.caps__lock,
+.shift {
+    width: 120px;
+}
+
+.ctrl,
+.win,
+.alt,
+.arrow__up,
+.arrow__left,
+.arrow__down,
+.arrow__right {
+
+}
+
+.space {
+    width: 510px;
 }
