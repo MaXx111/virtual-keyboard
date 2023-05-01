@@ -34,8 +34,24 @@ export default class HTMLElems {
     }
 
     keyboard(type) {
-        if(true) {
-            console.log(this.dataForKeyboard.engKeysLowerCase());
+
+        const div = document.createElement("div");
+        div.className = "keyboard";
+
+        const divWrapper = document.createElement("div");
+        divWrapper.className = "keyboard__wrapper";
+
+        const keyboardKeys = this.dataForKeyboard.engKeysLowerCase();
+
+        for(let i = 0; i < keyboardKeys.length; i++) {
+            const button = document.createElement('button');
+            button.className = 'keyboard__btn';
+            button.textContent = keyboardKeys[i];
+            divWrapper.append(button);
         }
+
+        div.appendChild(divWrapper);
+
+        return div;
     }
 }
