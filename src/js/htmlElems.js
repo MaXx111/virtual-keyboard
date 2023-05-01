@@ -47,12 +47,90 @@ export default class HTMLElems {
             const button = document.createElement('button');
             button.className = 'keyboard__button';
             button.textContent = keyboardKeys[i];
-            divWrapper.append(button);
+
+            let buttonUpgrate = this.specialButton(button);
+            divWrapper.append(buttonUpgrate);
         }
 
-        
+
         div.appendChild(divWrapper);
 
         return div;
+    }
+
+    specialButton(button) {
+        const buttonText = button.textContent;
+
+        if(buttonText == "backspace") {
+            button.classList.add("special");
+            button.classList.add("backspace");
+        }
+
+        if(buttonText == "tab") {
+            button.classList.add("special");
+            button.classList.add("tab");
+        }
+
+        if(buttonText == "delete") {
+            button.classList.add("special");
+            button.classList.add("delete");
+        }
+
+        if(buttonText == "caps lock") {
+            button.classList.add("special");
+            button.classList.add("caps__lock");
+        }
+
+        if(buttonText == "enter") {
+            button.classList.add("special");
+            button.classList.add("enter");
+        }
+
+        if(buttonText == "shift") {
+            button.classList.add("special");
+            button.classList.add("shift");
+        }
+
+        if(buttonText == "ctrl") {
+            button.classList.add("special");
+            button.classList.add("ctrl");
+        }
+
+        if(buttonText == "win") {
+            button.classList.add("special");
+            button.classList.add("win");
+        }
+
+        if(buttonText == "alt") {
+            button.classList.add("special");
+            button.classList.add("alt");
+        }
+
+        if(buttonText == " ") {
+            button.classList.add("special");
+            button.classList.add("space");
+        }
+
+        if(buttonText == "▲") {
+            button.classList.add("special");
+            button.classList.add("arrow__up");
+        }
+
+        if(buttonText == "◄") {
+            button.classList.add("arrow__left");
+            button.classList.add("space");
+        }
+
+        if(buttonText == "▼") {
+            button.classList.add("special");
+            button.classList.add("arrow__down");
+        }
+
+        if(buttonText == "►") {
+            button.classList.add("special");
+            button.classList.add("arrow__right");
+        }
+
+        return button;
     }
 }
