@@ -34,8 +34,6 @@ body {
     font-size: 32px;
 }
 
-
-
 .keyboard {
     width: 1100px;
     margin: auto;
@@ -59,6 +57,7 @@ body {
     background-color: #FFF0F5;
     font-size: 20px;
     user-select: none;
+    transition: 1s;
 }
 
 
@@ -74,13 +73,16 @@ body {
 .tab,
 .delete,
 .caps__lock,
-.shift {
+.shift__left,
+.shift__right {
     width: 120px;
 }
 
-.ctrl,
+.ctrl__left,
+.ctrl__right,
 .win,
-.alt,
+.alt__left,
+.alt__right,
 .arrow__up,
 .arrow__left,
 .arrow__down,
@@ -90,4 +92,9 @@ body {
 
 .space {
     width: 510px;
+}
+
+
+.active {
+    transform: scale(0.7);
 }

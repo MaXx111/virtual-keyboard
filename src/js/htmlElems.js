@@ -88,12 +88,22 @@ export default class HTMLElems {
 
         if(buttonText == "shift") {
             button.classList.add("special");
-            button.classList.add("shift");
+            button.classList.add("shift__left");
+        }
+
+        if(buttonText == "Shift") {
+            button.classList.add("special");
+            button.classList.add("shift__right");
         }
 
         if(buttonText == "ctrl") {
             button.classList.add("special");
-            button.classList.add("ctrl");
+            button.classList.add("ctrl__left");
+        }
+
+        if(buttonText == "Ctrl") {
+            button.classList.add("special");
+            button.classList.add("Ctrl__right");
         }
 
         if(buttonText == "win") {
@@ -103,7 +113,12 @@ export default class HTMLElems {
 
         if(buttonText == "alt") {
             button.classList.add("special");
-            button.classList.add("alt");
+            button.classList.add("alt__left");
+        }
+
+        if(buttonText == "Alt") {
+            button.classList.add("special");
+            button.classList.add("alt__right");
         }
 
         if(buttonText == " ") {
