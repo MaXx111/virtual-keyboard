@@ -41,7 +41,13 @@ export default class HTMLElems {
         const divWrapper = document.createElement("div");
         divWrapper.className = "keyboard__wrapper";
 
-        const keyboardKeys = this.dataForKeyboard.engKeysLowerCase();
+        let keyboardKeys;
+
+        if(type == `engLowerCase`) {
+            keyboardKeys = this.dataForKeyboard.engKeysLowerCase();
+        } else if (type == `engUpperCase`) {
+            keyboardKeys = this.dataForKeyboard.engKeysUpperCase();
+        }
 
         for(let i = 0; i < keyboardKeys.length; i++) {
             const button = document.createElement('button');
@@ -86,22 +92,22 @@ export default class HTMLElems {
             button.classList.add("enter");
         }
 
-        if(buttonText == "shift") {
+        if(buttonText == "Shift") {
             button.classList.add("special");
             button.classList.add("shift__left");
         }
 
-        if(buttonText == "Shift") {
+        if(buttonText == "shift") {
             button.classList.add("special");
             button.classList.add("shift__right");
         }
 
-        if(buttonText == "ctrl") {
+        if(buttonText == "Ctrl") {
             button.classList.add("special");
             button.classList.add("ctrl__left");
         }
 
-        if(buttonText == "Ctrl") {
+        if(buttonText == "ctrl") {
             button.classList.add("special");
             button.classList.add("Ctrl__right");
         }
@@ -111,12 +117,12 @@ export default class HTMLElems {
             button.classList.add("win");
         }
 
-        if(buttonText == "alt") {
+        if(buttonText == "Alt") {
             button.classList.add("special");
             button.classList.add("alt__left");
         }
 
-        if(buttonText == "Alt") {
+        if(buttonText == "alt") {
             button.classList.add("special");
             button.classList.add("alt__right");
         }
