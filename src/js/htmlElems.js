@@ -47,7 +47,7 @@ export default class HTMLElems {
       keyboardKeys = this.dataForKeyboard.engKeysUpperCase();
     }
 
-    for (let i = 0; i < keyboardKeys.length; i = +1) {
+    for (let i = 0; i < keyboardKeys.length; i += 1) {
       const button = document.createElement('button');
       button.className = 'keyboard__button';
       button.textContent = keyboardKeys[i];
