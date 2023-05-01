@@ -45,11 +45,12 @@ export default class HTMLElems {
 
         for(let i = 0; i < keyboardKeys.length; i++) {
             const button = document.createElement('button');
-            button.className = 'keyboard__btn';
+            button.className = 'keyboard__button';
             button.textContent = keyboardKeys[i];
             divWrapper.append(button);
         }
 
+        
         div.appendChild(divWrapper);
 
         return div;
